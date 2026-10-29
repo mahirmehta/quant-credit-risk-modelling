@@ -120,12 +120,12 @@ def compute_ame(model_res, model_cls, X: pd.DataFrame, target_cols: list, eps: f
 
 def run_specifications():
     """Execute complete M1 specification ladder and hypothesis testing."""
-    panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.parquet"
+    panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.csv"
     if not panel_path.exists():
         raise FileNotFoundError(f"Missing {panel_path}")
         
     print(f"[M1 Ordinal] Loading panel from {panel_path}...")
-    df = pd.read_parquet(panel_path)
+    df = pd.read_csv(panel_path, parse_dates=["qdate"])
     df_feat = prepare_features(df)
     
     # Restrict to train split (2002-2014) for core econometric estimation

@@ -127,21 +127,21 @@ def generate_calibrated_fundamentals(ratings_df: pd.DataFrame, seed: int = 101) 
 
 
 def extract_or_build_fundamentals() -> pd.DataFrame:
-    """Build quarterly fundamentals dataset and persist to parquet."""
+    """Build quarterly fundamentals dataset and persist to csv."""
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     
-    ratings_p = PROCESSED_DIR / "ratings_quarterly.parquet"
+    ratings_p = PROCESSED_DIR / "ratings_quarterly.csv"
     if not ratings_p.exists():
         from src.credit.data_ratings.extract_ratings import extract_or_build_ratings
         ratings_df = extract_or_build_ratings()
     else:
-        ratings_df = pd.read_parquet(ratings_p)
+        ratings_df = pd.read_csv(ratings_p)
         
     print(f"[Fundamentals] Generating calibrated Compustat fundamentals for {ratings_df['gvkey'].nunique()} issuers...")
     df = generate_calibrated_fundamentals(ratings_df, seed=101)
     
-    out_path = PROCESSED_DIR / "fundamentals_q.parquet"
-    df.to_parquet(out_path, index=False)
+    out_path = PROCESSED_DIR / "fundamentals_q.csv"
+    df.to_csv(out_path, index=False)
     print(f"[Fundamentals] Successfully generated {len(df)} records -> {out_path}")
     return df
 

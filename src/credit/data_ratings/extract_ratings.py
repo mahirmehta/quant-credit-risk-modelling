@@ -143,9 +143,9 @@ def extract_or_build_ratings() -> pd.DataFrame:
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     
     # Load macro quarterly dates to synchronize panels
-    macro_p = PROCESSED_DIR / "macro_q.parquet"
+    macro_p = PROCESSED_DIR / "macro_q.csv"
     if macro_p.exists():
-        macro_df = pd.read_parquet(macro_p)
+        macro_df = pd.read_csv(macro_p, parse_dates=["qdate"])
         qdates = macro_df["qdate"].dt.strftime("%Y-%m-%d").tolist()
     else:
         qdates = pd.date_range("2002-03-31", "2025-12-31", freq="QE").strftime("%Y-%m-%d").tolist()
@@ -153,8 +153,8 @@ def extract_or_build_ratings() -> pd.DataFrame:
     print(f"[Ratings] Building calibrated ratings panel across {len(qdates)} quarters...")
     df = generate_calibrated_ratings(qdates, n_firms=700, seed=42)
     
-    out_path = PROCESSED_DIR / "ratings_quarterly.parquet"
-    df.to_parquet(out_path, index=False)
+    out_path = PROCESSED_DIR / "ratings_quarterly.csv"
+    df.to_csv(out_path, index=False)
     print(f"[Ratings] Successfully generated {len(df)} rating records -> {out_path}")
     return df
 

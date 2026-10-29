@@ -46,4 +46,4 @@ All series were retrieved directly from Federal Reserve Bank of St. Louis public
 - `VIXCLS`: CBOE Volatility Index
 - `USREC`: NBER based Recession Indicators for the United States
 
-Contract compliance: Stored at `data/processed/macro_q.parquet` (104 rows × 22 columns).
+Contract compliance: Stored at `data/processed/macro_q.csv` (104 rows × 22 columns).

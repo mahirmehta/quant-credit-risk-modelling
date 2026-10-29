@@ -16,13 +16,13 @@ PROCESSED_DIR = ROOT_DIR / "data" / "processed"
 
 
 class TestDataContracts:
-    """Verify data schema and primary key contracts for all processed parquets."""
+    """Verify data schema and primary key contracts for all processed CSVs."""
 
     def test_ratings_quarterly_contract(self):
-        """Verify ratings_quarterly.parquet schema, keys, and valid ranges."""
-        file_path = PROCESSED_DIR / "ratings_quarterly.parquet"
+        """Verify ratings_quarterly.csv schema, keys, and valid ranges."""
+        file_path = PROCESSED_DIR / "ratings_quarterly.csv"
         assert file_path.exists(), f"File missing: {file_path}"
-        df = pd.read_parquet(file_path)
+        df = pd.read_csv(file_path)
 
         required_cols = [
             "gvkey", "qdate", "rating_num", "rating_str",
@@ -42,10 +42,10 @@ class TestDataContracts:
         assert (df[df["rating_num"] >= 11]["is_ig"] == 0).all(), "Ratings >= 11 must have is_ig == 0"
 
     def test_macro_quarterly_contract(self):
-        """Verify macro_q.parquet schema, keys, and temporal monotonicity."""
-        file_path = PROCESSED_DIR / "macro_q.parquet"
+        """Verify macro_q.csv schema, keys, and temporal monotonicity."""
+        file_path = PROCESSED_DIR / "macro_q.csv"
         assert file_path.exists(), f"File missing: {file_path}"
-        df = pd.read_parquet(file_path)
+        df = pd.read_csv(file_path, parse_dates=["qdate"])
 
         required_cols = [
             "qdate", "fedfunds", "dgs10", "term_spread", "hy_oas", "baa10y",
@@ -63,10 +63,10 @@ class TestDataContracts:
         assert len(df) >= 80, f"Expected at least 80 quarterly macro observations, found {len(df)}"
 
     def test_fundamentals_quarterly_contract(self):
-        """Verify fundamentals_q.parquet schema and key uniqueness."""
-        file_path = PROCESSED_DIR / "fundamentals_q.parquet"
+        """Verify fundamentals_q.csv schema and key uniqueness."""
+        file_path = PROCESSED_DIR / "fundamentals_q.csv"
         assert file_path.exists(), f"File missing: {file_path}"
-        df = pd.read_parquet(file_path)
+        df = pd.read_csv(file_path)
 
         required_cols = [
             "gvkey", "datadate", "avail_date", "sic", "log_assets", "leverage",
@@ -80,10 +80,10 @@ class TestDataContracts:
         assert dup_count == 0, f"Duplicate (gvkey, datadate) keys found in fundamentals_q: {dup_count}"
 
     def test_panel_firmq_contract(self):
-        """Verify panel_firmq.parquet schema, keys, splits, and forward label columns."""
-        file_path = PROCESSED_DIR / "panel_firmq.parquet"
+        """Verify panel_firmq.csv schema, keys, splits, and forward label columns."""
+        file_path = PROCESSED_DIR / "panel_firmq.csv"
         assert file_path.exists(), f"File missing: {file_path}"
-        df = pd.read_parquet(file_path)
+        df = pd.read_csv(file_path)
 
         required_cols = [
             "gvkey", "qdate", "rating_num", "rating_str", "is_ig",

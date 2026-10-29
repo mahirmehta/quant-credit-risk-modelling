@@ -40,7 +40,7 @@ plt.rcParams['figure.titlesize'] = 14
 
 def run_metrics_pipeline():
     print("Loading processed panel dataset...")
-    df = pd.read_parquet(ROOT_DIR / "data" / "processed" / "panel_firmq.parquet")
+    df = pd.read_csv(ROOT_DIR / "data" / "processed" / "panel_firmq.csv")
     print(f"Loaded {len(df)} rows across {df['gvkey'].nunique()} firms.")
 
     # 1. Register foundational panel metrics

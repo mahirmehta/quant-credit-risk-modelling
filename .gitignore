@@ -25,9 +25,12 @@ htmlcov/
 .wrds_key
 
 # Raw licensed & external data (per Section 6.2 & 6.4.10)
+data/raw/
 data/interim/
 data/external/
-data/processed/*.csv
+
+# Disallow parquet files across repo (CSV files only per user requirement)
+*.parquet
 
 # Temporary build & packaging outputs
 *.egg-info/

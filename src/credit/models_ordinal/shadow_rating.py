@@ -98,12 +98,12 @@ def compute_half_life(lam: float, lam_se: float) -> tuple:
 
 def run_shadow_rating_pipeline():
     """Main execution pipeline for N1 Shadow-Rating Gap & Half-Life analysis."""
-    panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.parquet"
+    panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.csv"
     if not panel_path.exists():
         raise FileNotFoundError(f"Missing {panel_path}")
         
     print(f"[N1 Shadow Rating] Loading panel from {panel_path}...")
-    df = pd.read_parquet(panel_path)
+    df = pd.read_csv(panel_path, parse_dates=["qdate"])
     df_feat = prepare_features(df)
     
     # 1. Fit M1 on training sample (<=2014)
@@ -331,8 +331,8 @@ def run_shadow_rating_pipeline():
     )
 
     # Save augmented panel with shadow rating and gap for downstream modules (M3, Stress, etc.)
-    out_panel = ROOT_DIR / "data" / "processed" / "panel_with_shadow.parquet"
-    df_feat.to_parquet(out_panel, index=False)
+    out_panel = ROOT_DIR / "data" / "processed" / "panel_with_shadow.csv"
+    df_feat.to_csv(out_panel, index=False)
     print(f"[N1 Shadow Rating] Saved augmented panel with shadow rating to {out_panel}")
 
     # 5. Generate Figures

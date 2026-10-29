@@ -578,18 +578,18 @@ def run_full_stress_pipeline():
     logger.info("==================================================================")
 
     # 1. Load data
-    panel_path = PROCESSED_DIR / "panel_firmq.parquet"
-    scenarios_path = PROCESSED_DIR / "scenarios.parquet"
-    macro_path = PROCESSED_DIR / "macro_q.parquet"
+    panel_path = PROCESSED_DIR / "panel_firmq.csv"
+    scenarios_path = PROCESSED_DIR / "scenarios.csv"
+    macro_path = PROCESSED_DIR / "macro_q.csv"
 
     if not scenarios_path.exists():
         logger.info("Scenarios file missing; executing var_scenarios pipeline first...")
         from src.credit.stress.var_scenarios import run_var_scenarios_pipeline
         run_var_scenarios_pipeline()
 
-    panel_df = pd.read_parquet(panel_path)
-    scenarios_df = pd.read_parquet(scenarios_path)
-    macro_df = pd.read_parquet(macro_path)
+    panel_df = pd.read_csv(panel_path)
+    scenarios_df = pd.read_csv(scenarios_path)
+    macro_df = pd.read_csv(macro_path)
 
     # 2. Fit fallen angel model
     logit_res, params, cov_params, spec_features = fit_fallen_angel_forecasting_model(panel_df)

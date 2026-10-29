@@ -40,10 +40,10 @@ def compute_early_warning_lead_times(panel_path: Path = None) -> Dict[str, Any]:
     4. Quantifies lead time advantage, saves metrics to JSON, and generates publication figure.
     """
     if panel_path is None:
-        panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.parquet"
+        panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.csv"
 
     logger.info(f"[Early-Warning] Loading panel from {panel_path}...")
-    df = pd.read_parquet(panel_path)
+    df = pd.read_csv(panel_path)
     
     # Filter to investment grade records
     df["qdate"] = pd.to_datetime(df["qdate"])

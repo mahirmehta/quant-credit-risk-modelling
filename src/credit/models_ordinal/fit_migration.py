@@ -93,12 +93,12 @@ def compute_m2_ame(model_res, X: pd.DataFrame, target_cols: list, eps: float = 1
 
 def run_migration_model():
     """Estimate M2 Augmented Ordinal Migration Scale."""
-    panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.parquet"
+    panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.csv"
     if not panel_path.exists():
         raise FileNotFoundError(f"Missing {panel_path}")
         
     print(f"[M2 Migration] Loading panel from {panel_path}...")
-    df = pd.read_parquet(panel_path)
+    df = pd.read_csv(panel_path, parse_dates=["qdate"])
     df_migr = prepare_migration_data(df)
     
     # Train sample

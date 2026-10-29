@@ -5,7 +5,7 @@
 
 ---
 
-## 1. `data/processed/macro_q.parquet`
+## 1. `data/processed/macro_q.csv`
 - `qdate` (datetime64): Calendar quarter-end date (YYYY-03-31, YYYY-06-30, etc.)
 - `fedfunds` (float64): Effective Federal Funds Rate level (%)
 - `dgs10` (float64): 10-Year Treasury Constant Maturity Yield (%)
@@ -26,7 +26,7 @@
 
 ---
 
-## 2. `data/processed/fundamentals_q.parquet`
+## 2. `data/processed/fundamentals_q.csv`
 - `gvkey` (string/int): Compustat global company key
 - `datadate` (datetime64): Fiscal quarter-end date
 - `avail_date` (datetime64): SEC earnings filing date `rdq` (or `datadate + 90 days`)
@@ -43,7 +43,7 @@
 
 ---
 
-## 3. `data/processed/ratings_quarterly.parquet`
+## 3. `data/processed/ratings_quarterly.csv`
 - `gvkey` (string/int): Compustat global company key
 - `qdate` (datetime64): Observation quarter-end
 - `rating_str` (string): S&P rating symbol (e.g., 'BBB-', 'BB+', 'A')
@@ -56,7 +56,7 @@
 
 ---
 
-## 4. `data/processed/panel_firmq.parquet`
+## 4. `data/processed/panel_firmq.csv`
 Combined firm-quarter observation panel merging fundamentals, ratings, and macro conditions at `qdate`:
 - Primary Features: Firm financials (known at `qdate`), macro series (known at `qdate`), sector (`sector_ff12`), current rating (`rating_num`, `rating_bucket`).
 - Target Labels:

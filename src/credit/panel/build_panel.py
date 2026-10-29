@@ -60,9 +60,9 @@ def build_panel(h: int = 4) -> pd.DataFrame:
     print(f"[Panel] Building firm-quarter panel (horizon h={h} quarters)...")
     
     # 1. Load data
-    ratings_p = PROCESSED_DIR / "ratings_quarterly.parquet"
-    fund_p = PROCESSED_DIR / "fundamentals_q.parquet"
-    macro_p = PROCESSED_DIR / "macro_q.parquet"
+    ratings_p = PROCESSED_DIR / "ratings_quarterly.csv"
+    fund_p = PROCESSED_DIR / "fundamentals_q.csv"
+    macro_p = PROCESSED_DIR / "macro_q.csv"
     
     if not ratings_p.exists():
         from src.credit.data_ratings.extract_ratings import extract_or_build_ratings
@@ -74,9 +74,9 @@ def build_panel(h: int = 4) -> pd.DataFrame:
         from src.credit.data_macro.extract_macro import build_macro_quarterly
         build_macro_quarterly()
         
-    ratings_df = pd.read_parquet(ratings_p)
-    fund_df = pd.read_parquet(fund_p)
-    macro_df = pd.read_parquet(macro_p)
+    ratings_df = pd.read_csv(ratings_p)
+    fund_df = pd.read_csv(fund_p)
+    macro_df = pd.read_csv(macro_p)
     
     # 2. Point-in-time merge of ratings and fundamentals:
     # At each (gvkey, qdate), match the latest available filing where avail_date <= qdate (Section 6.4, 6.5)
@@ -196,12 +196,10 @@ def build_panel(h: int = 4) -> pd.DataFrame:
     with open(cutoffs_dir / "winsor_cutoffs.json", "w", encoding="utf-8") as f:
         json.dump(winsor_cutoffs, f, indent=2)
         
-    out_parquet = PROCESSED_DIR / "panel_firmq.parquet"
     out_csv = PROCESSED_DIR / "panel_firmq.csv"
-    merged.to_parquet(out_parquet, index=False)
     merged.to_csv(out_csv, index=False)
     
-    print(f"[Panel] Saved {len(merged)} firm-quarters to {out_parquet}")
+    print(f"[Panel] Saved {len(merged)} firm-quarters to {out_csv}")
     print("  Splits distribution:\n", merged["split"].value_counts())
     print("  FA count by split:\n", merged.groupby("split")["fa_h"].sum())
     

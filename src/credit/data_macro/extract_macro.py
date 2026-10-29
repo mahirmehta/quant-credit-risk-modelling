@@ -47,7 +47,7 @@ def build_macro_quarterly() -> pd.DataFrame:
     """
     Download all series, resample/aggregate to quarterly observation dates,
     compute standard transformations (levels, 4Q changes, YoY growth),
-    and save to data/processed/macro_q.parquet.
+    and save to data/processed/macro_q.csv.
     """
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
@@ -124,11 +124,9 @@ def build_macro_quarterly() -> pd.DataFrame:
     # Filter to sample window: 2000Q1 to 2025Q4 (allowing 2-year pre-sample for 4Q lags)
     q_df = q_df[(q_df["qdate"] >= "2000-01-01") & (q_df["qdate"] <= "2025-12-31")].copy()
     
-    out_parquet = PROCESSED_DIR / "macro_q.parquet"
     out_csv = PROCESSED_DIR / "macro_q.csv"
-    q_df.to_parquet(out_parquet, index=False)
     q_df.to_csv(out_csv, index=False)
-    print(f"[Macro] Successfully saved {len(q_df)} quarters to {out_parquet}")
+    print(f"[Macro] Successfully saved {len(q_df)} quarters to {out_csv}")
     return q_df
 
 

@@ -227,7 +227,7 @@ def build_all_slides():
         "N5 – Reverse Stress Testing: Solving the minimum-norm macroeconomic shock required to precipitate severe target fallen-angel rates.",
         "N6 – Quantified Early-Warning Lead Time: Measuring exact quarterly lead-time distribution of quantitative alerts vs agency CreditWatch.",
         "N7 – Verification & Auditability Standards: Known-DGP Monte Carlo parameter recovery, strict embargoes, and a zero-hand-typed-number Claim Ledger.",
-        "Open Reproducibility: Full end-to-end Python pipeline from raw parquet assembly to publication PDF and presentation deck."
+        "Open Reproducibility: Full end-to-end Python pipeline from raw data assembly to publication PDF and presentation deck."
     ])
     slide4.notes_slide.notes_text_frame.text = (
         "Our contributions span from econometric formulation (latent shadow rating half-life and multi-state migration) "

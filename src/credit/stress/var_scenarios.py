@@ -8,7 +8,7 @@ Generates coherent conditional stress paths for mandated scenarios:
   - S2: Hard Landing (Real GDP -3.0pp, HY OAS +400bp)
   - S3: Stagflation (CPI +3.0pp, Real GDP -1.5pp, FFR +150bp)
   - S4: Soft Landing / Easing (FFR -200bp, GDP +2.5pp, OAS -100bp)
-Outputs saved to data/processed/scenarios.parquet and results/.
+Outputs saved to data/processed/scenarios.csv and results/.
 """
 
 import sys
@@ -55,10 +55,10 @@ def fit_var_model(
     and return fitted VARResults.
     """
     if macro_path is None:
-        macro_path = PROCESSED_DIR / "macro_q.parquet"
+        macro_path = PROCESSED_DIR / "macro_q.csv"
 
     logger.info(f"Loading macro dataset from {macro_path}...")
-    df = pd.read_parquet(macro_path)
+    df = pd.read_csv(macro_path)
     df["qdate"] = pd.to_datetime(df["qdate"])
     
     # Sort and set index
@@ -275,7 +275,7 @@ def generate_all_scenarios(
       - S2: Hard Landing (Real GDP -3.0pp, HY OAS +400bp, GFC-lite)
       - S3: Stagflation (CPI +3.0pp, Real GDP -1.5pp, FFR +150bp)
       - S4: Soft Landing / Easing (FFR -200bp, GDP +2.5pp, OAS -100bp)
-    Saves to data/processed/scenarios.parquet.
+    Saves to data/processed/scenarios.csv.
     """
     logger.info(f"Generating 5 conditional scenarios over {horizon} quarters...")
     p = var_model.k_ar
@@ -376,9 +376,9 @@ def generate_all_scenarios(
         save_result_metric(f"scenario_{s_id.lower()}_trough_gdp", meta[s_id]["trough_gdp"], spec=s_id, notes="Trough Real GDP YoY")
 
     scenarios_df = pd.concat(all_dfs, ignore_index=True)
-    out_parquet = PROCESSED_DIR / "scenarios.parquet"
-    scenarios_df.to_parquet(out_parquet, index=False)
-    logger.info(f"Saved {len(scenarios_df)} scenario rows to {out_parquet}")
+    out_csv = PROCESSED_DIR / "scenarios.csv"
+    scenarios_df.to_csv(out_csv, index=False)
+    logger.info(f"Saved {len(scenarios_df)} scenario rows to {out_csv}")
 
     return scenarios_df, meta
 

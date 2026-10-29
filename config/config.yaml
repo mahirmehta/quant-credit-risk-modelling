@@ -13,13 +13,13 @@ paths:
   slides: "slides"
 
 contracts:
-  panel_file: "data/processed/panel_firmq.parquet"
-  ratings_quarterly_file: "data/processed/ratings_quarterly.parquet"
-  fundamentals_file: "data/processed/fundamentals_q.parquet"
-  macro_file: "data/processed/macro_q.parquet"
-  scenarios_file: "data/processed/scenarios.parquet"
-  bonds_file: "data/processed/bonds_monthly.parquet"
-  id_crosswalk_file: "data/processed/id_crosswalk.parquet"
+  panel_file: "data/processed/panel_firmq.csv"
+  ratings_quarterly_file: "data/processed/ratings_quarterly.csv"
+  fundamentals_file: "data/processed/fundamentals_q.csv"
+  macro_file: "data/processed/macro_q.csv"
+  scenarios_file: "data/processed/scenarios.csv"
+  bonds_file: "data/processed/bonds_monthly.csv"
+  id_crosswalk_file: "data/processed/id_crosswalk.csv"
 
 models:
   ordered_model:

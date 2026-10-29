@@ -63,12 +63,12 @@ quant-credit-risk-modelling/
 │   └── lineage.md                    # Extraction parameters, timestamps, record counts
 ├── data/
 │   └── processed/
-│       ├── macro_q.parquet           # 104 quarters of processed FRED macro series
-│       ├── ratings_quarterly.parquet # Calibrated S&P rating histories & Watch/Outlook
-│       ├── fundamentals_q.parquet    # Compustat quarterly financial ratios & rdq dates
-│       ├── panel_firmq.parquet       # Merged 67,406 firm-quarter panel with forward labels
-│       ├── panel_with_shadow.parquet # Panel augmented with PIT shadow ratings & lag gaps
-│       └── scenarios.parquet         # 8-quarter conditional VAR scenario paths (S0-S4)
+│       ├── macro_q.csv               # 104 quarters of processed FRED macro series
+│       ├── ratings_quarterly.csv     # Calibrated S&P rating histories & Watch/Outlook
+│       ├── fundamentals_q.csv        # Compustat quarterly financial ratios & rdq dates
+│       ├── panel_firmq.csv           # Merged 67,406 firm-quarter panel with forward labels
+│       ├── panel_with_shadow.csv     # Panel augmented with PIT shadow ratings & lag gaps
+│       └── scenarios.csv             # 8-quarter conditional VAR scenario paths (S0-S4)
 ├── src/credit/
 │   ├── data_macro/                   # Live FRED macro extraction & transformations
 │   ├── data_ratings/                 # S&P rating history extraction & WRDS connectors

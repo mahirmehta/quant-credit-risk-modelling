@@ -189,10 +189,10 @@ def get_specification_features() -> Dict[str, List[str]]:
 def fit_and_evaluate_specifications(panel_path: Path = None) -> Dict[str, Any]:
     """Execute the full binary fallen-angel forecasting estimation pipeline."""
     if panel_path is None:
-        panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.parquet"
+        panel_path = ROOT_DIR / "data" / "processed" / "panel_firmq.csv"
 
     logger.info(f"Loading firm panel from {panel_path}...")
-    df = pd.read_parquet(panel_path)
+    df = pd.read_csv(panel_path, parse_dates=["qdate"])
     
     spec_features = get_specification_features()
     all_results = {}

@@ -21,14 +21,14 @@ from sklearn.metrics import roc_auc_score
 import statsmodels.api as sm
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
-PANEL_PATH = ROOT_DIR / "data" / "processed" / "panel_firmq.parquet"
+PANEL_PATH = ROOT_DIR / "data" / "processed" / "panel_firmq.csv"
 
 
 @pytest.fixture(scope="module")
 def train_dataset():
     """Load clean training dataset from processed firm-quarter panel."""
-    assert PANEL_PATH.exists(), f"Panel parquet missing: {PANEL_PATH}"
-    df = pd.read_parquet(PANEL_PATH)
+    assert PANEL_PATH.exists(), f"Panel CSV missing: {PANEL_PATH}"
+    df = pd.read_csv(PANEL_PATH)
     train_df = df[df["split"] == "train"].dropna(
         subset=[
             "fa_h", "leverage", "roa", "log_assets", "interest_coverage",

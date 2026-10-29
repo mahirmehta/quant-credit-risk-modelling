@@ -18,7 +18,7 @@ import pandas as pd
 import pytest
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
-PANEL_PATH = ROOT_DIR / "data" / "processed" / "panel_firmq.parquet"
+PANEL_PATH = ROOT_DIR / "data" / "processed" / "panel_firmq.csv"
 CUTOFFS_PATH = ROOT_DIR / "results" / "json" / "winsor_cutoffs.json"
 
 
@@ -26,7 +26,7 @@ CUTOFFS_PATH = ROOT_DIR / "results" / "json" / "winsor_cutoffs.json"
 def panel_data():
     """Load the processed firm-quarter panel dataset."""
     assert PANEL_PATH.exists(), f"Panel file missing at {PANEL_PATH}. Run build_panel.py first."
-    df = pd.read_parquet(PANEL_PATH)
+    df = pd.read_csv(PANEL_PATH)
     df["qdate"] = pd.to_datetime(df["qdate"])
     df["avail_date"] = pd.to_datetime(df["avail_date"])
     df["asof_date"] = pd.to_datetime(df["asof_date"])
