@@ -1,0 +1,8 @@
+{
+  "metric_key": "placebo_shuffled_auc",
+  "value": 0.5036,
+  "ci": null,
+  "n": null,
+  "spec": "Negative Control: Shuffled Labels",
+  "notes": "AUC centers at 0.50 random chance"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_interest_coverage_P_BBB_minus",
+  "value": -0.0010297904276207756,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of interest_coverage on probability of BBB-"
+}

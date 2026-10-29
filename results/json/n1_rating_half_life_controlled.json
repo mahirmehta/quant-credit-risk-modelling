@@ -1,0 +1,11 @@
+{
+  "metric_key": "n1_rating_half_life_controlled",
+  "value": 427.97145958345897,
+  "ci": [
+    185.55732355239942,
+    6931.125226233421
+  ],
+  "n": 66008,
+  "spec": "controlled_ols",
+  "notes": "Rating half-life with rating level and size controls"
+}

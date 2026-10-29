@@ -1,0 +1,8 @@
+{
+  "metric_key": "n1_mean_shadow_rating",
+  "value": 9.145981129792467,
+  "ci": null,
+  "n": 66706,
+  "spec": "full_sample",
+  "notes": "Mean continuous shadow rating on 1-22 notch scale"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "reverse_stress_norm",
+  "value": 11.442137856997762,
+  "ci": null,
+  "n": null,
+  "spec": "N5 Reverse Stress",
+  "notes": "Minimum Mahalanobis norm for 10% FA rate"
+}

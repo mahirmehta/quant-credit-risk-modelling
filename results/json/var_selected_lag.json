@@ -1,0 +1,8 @@
+{
+  "metric_key": "var_selected_lag",
+  "value": 2.0,
+  "ci": null,
+  "n": null,
+  "spec": "VAR order selection",
+  "notes": "Selected lag order for scenario engine"
+}

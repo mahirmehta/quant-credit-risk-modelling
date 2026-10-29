@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_term_spread_P_IG",
+  "value": 0.005763666781835731,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of term_spread on probability of Investment Grade P(IG)"
+}

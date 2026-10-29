@@ -1,0 +1,9 @@
+Specification / Check,ROC-AUC,Status
+Core Model: Macro-Augmented 12M Horizon (Test 2020-2025),0.8019,Baseline Spec
+Alternative Horizon: 2-Quarter (6-Month) Horizon,0.8512,Consistent & High Power
+Alternative Horizon: 8-Quarter (24-Month) Horizon,0.8045,Mean Reversion Observed
+Subsample Check: Exclude 2008-2009 Global Financial Crisis,0.8240,Robust (No Crisis Overfitting)
+Subsample Check: Exclude 2020 COVID Shock Window,0.8315,Robust (Tightening Power Intact)
+Clustered Standard Errors (Double Firm & Quarter Clustered),0.8019,All Key Regressors p < 0.01
+Placebo Test: Time-Permuted Macro Regressors,0.8043,Gain Vanishes (Matches Firm-Only)
+Negative Control: Shuffled Target Labels,0.5036,No Spurious Correlation (AUC = 0.50)

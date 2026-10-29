@@ -1,0 +1,8 @@
+{
+  "metric_key": "n1_mean_gap_notches",
+  "value": -0.05755378460803531,
+  "ci": null,
+  "n": 66706,
+  "spec": "full_sample",
+  "notes": "Mean shadow-rating gap (shadow - published) in notches"
+}

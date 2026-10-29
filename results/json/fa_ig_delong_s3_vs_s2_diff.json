@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_delong_s3_vs_s2_diff",
+  "value": 0.0006545123118658625,
+  "ci": null,
+  "n": null,
+  "spec": "S3 vs S2",
+  "notes": "AUC diff S3 - S2 (Hypothesis H2)"
+}

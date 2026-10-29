@@ -1,0 +1,6 @@
+Stage,Firms,Firm-Quarters,Pct Retained
+All US Non-Financial & Non-Utility Corporate Issuers (WRDS),1250,98500,100.0%
+"Filter: Required Compustat Fundamentals (Assets, Debt, EBITDA, Interest)",915,79240,80.4%
+Filter: Continuous S&P Issuer Credit Rating & History Coverage,745,71850,72.9%
+Filter: Outlier Treatment (1%/99% Winsorisation on Training Only),700,67406,68.4%
+Final Assembled Research Panel (2000Q1 - 2025Q4),700,67406,68.4%

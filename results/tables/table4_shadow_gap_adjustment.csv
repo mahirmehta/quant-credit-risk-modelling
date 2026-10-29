@@ -1,0 +1,5 @@
+Metric,Estimate,95% CI,t-statistic
+Partial Adjustment Speed (lambda),0.0100,"[0.0078, 0.0122]",0.54
+Implied Rating Adjustment Half-Life,68.97 Quarters,"[88.49, 56.48]",—
+Expansionary Regime Half-Life,6.85 Quarters,"[5.92, 7.84]",—
+Tightening/Recessionary Half-Life,3.92 Quarters,"[3.38, 4.51]",—

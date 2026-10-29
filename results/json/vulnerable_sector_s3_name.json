@@ -1,0 +1,8 @@
+{
+  "metric_key": "vulnerable_sector_s3_name",
+  "value": "NoDur",
+  "ci": null,
+  "n": null,
+  "spec": "S3 Stagflation",
+  "notes": "Most vulnerable sector under stagflation"
+}

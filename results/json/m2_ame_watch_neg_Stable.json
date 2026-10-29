@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_watch_neg_Stable",
+  "value": -0.20641906010674244,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of watch_neg on state Stable"
+}

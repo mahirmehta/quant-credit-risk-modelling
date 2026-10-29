@@ -1,0 +1,8 @@
+{
+  "metric_key": "stress_s2_fa_rate",
+  "value": 9.42,
+  "ci": null,
+  "n": null,
+  "spec": "S2 Hard Landing FA Rate (%)",
+  "notes": ""
+}

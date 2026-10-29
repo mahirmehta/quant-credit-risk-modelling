@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_s4_top10_lift_test",
+  "value": 6.323529411764706,
+  "ci": null,
+  "n": 6615,
+  "spec": "S4",
+  "notes": "Top decile lift Investment Grade (Full)"
+}

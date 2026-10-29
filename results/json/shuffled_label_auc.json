@@ -1,0 +1,8 @@
+{
+  "metric_key": "shuffled_label_auc",
+  "value": 0.4948,
+  "ci": null,
+  "n": null,
+  "spec": "negative_control",
+  "notes": "Negative control ROC-AUC collapses to ~0.50"
+}

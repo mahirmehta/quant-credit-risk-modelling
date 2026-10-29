@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_s3_logloss_test",
+  "value": 0.0909219902579918,
+  "ci": null,
+  "n": 6615,
+  "spec": "S3",
+  "notes": "Log-loss on test Investment Grade (Full)"
+}

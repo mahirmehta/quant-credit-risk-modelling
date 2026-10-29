@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_hy_oas_P_IG",
+  "value": 0.0007745183907438142,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of hy_oas on probability of Investment Grade P(IG)"
+}

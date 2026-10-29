@@ -1,0 +1,8 @@
+{
+  "metric_key": "m3_auc_base",
+  "value": 0.8057,
+  "ci": null,
+  "n": null,
+  "spec": "M3 Base Firm-Only Logit",
+  "notes": "Out-of-sample ROC-AUC on 2020-2025 test set"
+}

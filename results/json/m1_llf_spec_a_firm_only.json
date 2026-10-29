@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_llf_spec_a_firm_only",
+  "value": -50505.57102191532,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_a_firm_only",
+  "notes": "Log-Likelihood for M1 Ordered Probit spec_a_firm_only"
+}

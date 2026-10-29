@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_delong_s3_vs_s2_pval",
+  "value": 0.8033010544093067,
+  "ci": null,
+  "n": null,
+  "spec": "S3 vs S2",
+  "notes": "p-val S3 vs S2 (Hypothesis H2)"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_delong_s4_vs_s3_pval",
+  "value": 0.896627941918571,
+  "ci": null,
+  "n": null,
+  "spec": "S4 vs S3",
+  "notes": "p-val S4 vs S3"
+}

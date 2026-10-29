@@ -1,0 +1,11 @@
+{
+  "metric_key": "n1_half_life_expansion",
+  "value": 427.7828090420075,
+  "ci": [
+    180.25918192109847,
+    6931.125226233421
+  ],
+  "n": 66008,
+  "spec": "regime_ols",
+  "notes": "Rating half-life during NBER expansions"
+}

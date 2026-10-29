@@ -1,0 +1,8 @@
+{
+  "metric_key": "verification_tests_total",
+  "value": 22.0,
+  "ci": null,
+  "n": 22,
+  "spec": "pytest",
+  "notes": "Total test cases executed in A11 verification suite"
+}

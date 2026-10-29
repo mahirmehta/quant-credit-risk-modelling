@@ -1,0 +1,11 @@
+{
+  "metric_key": "stress_fa_rate_s0",
+  "value": 0.022328114934806593,
+  "ci": [
+    0.01789999531495207,
+    0.028025817953955923
+  ],
+  "n": 307,
+  "spec": "S0",
+  "notes": "Projected 12m FA rate under S0"
+}

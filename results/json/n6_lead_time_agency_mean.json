@@ -1,0 +1,11 @@
+{
+  "metric_key": "n6_lead_time_agency_mean",
+  "value": 1.24,
+  "ci": [
+    1.02,
+    1.46
+  ],
+  "n": null,
+  "spec": "Agency CreditWatch Placement",
+  "notes": "Mean agency watch lead time in quarters"
+}

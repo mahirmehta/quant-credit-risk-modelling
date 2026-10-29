@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_s4_logloss_test",
+  "value": 0.21868876178515667,
+  "ci": null,
+  "n": 2755,
+  "spec": "S4",
+  "notes": "Log-loss on test BBB-Band Subsample"
+}

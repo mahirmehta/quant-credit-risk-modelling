@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_hy_oas_NegWatchOutlook",
+  "value": 0.0009582039336826675,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of hy_oas on state NegWatchOutlook"
+}

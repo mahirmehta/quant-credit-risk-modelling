@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_s1_prauc_test",
+  "value": 0.20230069631861444,
+  "ci": null,
+  "n": 2755,
+  "spec": "S1",
+  "notes": "PR-AUC on test BBB-Band Subsample"
+}

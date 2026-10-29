@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_roa_Upgrade",
+  "value": 0.011801132355016713,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of roa on state Upgrade"
+}

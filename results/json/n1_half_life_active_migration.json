@@ -1,0 +1,11 @@
+{
+  "metric_key": "n1_half_life_active_migration",
+  "value": 32.07080574950234,
+  "ci": [
+    14.253959103727,
+    6931.125226233421
+  ],
+  "n": 5261,
+  "spec": "active_migration_subsample",
+  "notes": "Rating half-life conditional on active rating migration event"
+}

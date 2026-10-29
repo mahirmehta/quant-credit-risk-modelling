@@ -1,0 +1,8 @@
+{
+  "metric_key": "stress_delta_p_s1",
+  "value": 0.0034899966381909016,
+  "ci": null,
+  "n": null,
+  "spec": "S1",
+  "notes": "Delta P(FA) relative to baseline under S1"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_llf_spec_c_combined",
+  "value": -50495.37211566864,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_c_combined",
+  "notes": "Log-Likelihood for M1 Ordered Probit spec_c_combined"
+}

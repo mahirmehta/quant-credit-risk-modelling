@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_fedfunds_Stable",
+  "value": -0.0033351352716832505,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of fedfunds on state Stable"
+}

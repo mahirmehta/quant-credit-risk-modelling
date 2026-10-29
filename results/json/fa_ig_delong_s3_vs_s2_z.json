@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_delong_s3_vs_s2_z",
+  "value": 0.3043992152788635,
+  "ci": null,
+  "n": null,
+  "spec": "S3 vs S2",
+  "notes": "Z-stat S3 vs S2"
+}

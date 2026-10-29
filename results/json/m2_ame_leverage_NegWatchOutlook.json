@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_leverage_NegWatchOutlook",
+  "value": 0.0012799323837271752,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of leverage on state NegWatchOutlook"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "placebo_macro_wald_pval",
+  "value": 0.8038,
+  "ci": null,
+  "n": null,
+  "spec": "placebo_test",
+  "notes": "Permuted macro block Wald test fails to reject null (p > 0.05)"
+}

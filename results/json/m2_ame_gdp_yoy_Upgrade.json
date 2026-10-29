@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_gdp_yoy_Upgrade",
+  "value": 0.0017849880221453898,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of gdp_yoy on state Upgrade"
+}

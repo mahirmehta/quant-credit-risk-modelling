@@ -1,0 +1,11 @@
+{
+  "metric_key": "n1_half_life_quarters",
+  "value": 68.97,
+  "ci": [
+    88.49,
+    56.48
+  ],
+  "n": null,
+  "spec": "",
+  "notes": "Agency rating adjustment half-life in quarters"
+}

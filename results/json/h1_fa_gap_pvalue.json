@@ -1,0 +1,8 @@
+{
+  "metric_key": "h1_fa_gap_pvalue",
+  "value": 0.3412577614902038,
+  "ci": null,
+  "n": 40610,
+  "spec": "logit_fa_4q_ig_sample",
+  "notes": "p-value on shadow gap predicting 4Q fallen angel"
+}

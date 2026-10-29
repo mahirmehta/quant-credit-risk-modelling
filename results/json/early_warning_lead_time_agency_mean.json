@@ -1,0 +1,8 @@
+{
+  "metric_key": "early_warning_lead_time_agency_mean",
+  "value": 4.984126984126984,
+  "ci": null,
+  "n": null,
+  "spec": "",
+  "notes": "Mean agency lead time in quarters"
+}

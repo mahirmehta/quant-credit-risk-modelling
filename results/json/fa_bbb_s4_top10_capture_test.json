@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_s4_top10_capture_test",
+  "value": 0.2696078431372549,
+  "ci": null,
+  "n": 2755,
+  "spec": "S4",
+  "notes": "Top decile capture BBB-Band Subsample"
+}

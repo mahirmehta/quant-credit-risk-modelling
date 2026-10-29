@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_pseudo_r2_logit",
+  "value": 0.10389749984800767,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_augmented_logit",
+  "notes": "McFadden pseudo-R2 for M2 Augmented Ordinal Migration Logit"
+}

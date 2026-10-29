@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_term_spread_MultiDowngrade",
+  "value": 0.003200295167601134,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of term_spread on state MultiDowngrade"
+}

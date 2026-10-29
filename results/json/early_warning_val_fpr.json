@@ -1,0 +1,8 @@
+{
+  "metric_key": "early_warning_val_fpr",
+  "value": 0.11402730980670332,
+  "ci": null,
+  "n": null,
+  "spec": "S3",
+  "notes": "Validation FPR at alert threshold"
+}

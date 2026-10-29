@@ -1,0 +1,11 @@
+{
+  "metric_key": "n1_adjustment_speed",
+  "value": 0.01,
+  "ci": [
+    0.0078,
+    0.0122
+  ],
+  "n": null,
+  "spec": "",
+  "notes": "Partial adjustment speed lambda"
+}

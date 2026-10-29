@@ -1,0 +1,8 @@
+{
+  "metric_key": "early_warning_val_sensitivity",
+  "value": 0.8520408163265306,
+  "ci": null,
+  "n": null,
+  "spec": "S3",
+  "notes": "Validation sensitivity at alert threshold"
+}

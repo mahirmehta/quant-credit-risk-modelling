@@ -1,0 +1,8 @@
+{
+  "metric_key": "h1_downgrade_gap_coef",
+  "value": 0.02251246121637238,
+  "ci": null,
+  "n": 63920,
+  "spec": "logit_downgrade_4q",
+  "notes": "Logit coefficient on shadow gap predicting 4Q downgrade; OR = 1.023, p = 1.3660e-02"
+}

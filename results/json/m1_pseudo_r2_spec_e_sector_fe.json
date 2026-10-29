@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_pseudo_r2_spec_e_sector_fe",
+  "value": 0.3596400771279049,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_e_sector_fe",
+  "notes": "McFadden pseudo-R2 for M1 Ordered Probit spec_e_sector_fe"
+}

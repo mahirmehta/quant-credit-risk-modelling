@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_s3_auc_test",
+  "value": 0.8022670848033451,
+  "ci": null,
+  "n": 2755,
+  "spec": "S3",
+  "notes": "ROC-AUC on test BBB-Band Subsample"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "scenario_s2_norm",
+  "value": 2.600589884204056,
+  "ci": null,
+  "n": null,
+  "spec": "S2",
+  "notes": "Mahalanobis shock norm"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_hy_oas_Upgrade",
+  "value": -0.0012968387176708392,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of hy_oas on state Upgrade"
+}

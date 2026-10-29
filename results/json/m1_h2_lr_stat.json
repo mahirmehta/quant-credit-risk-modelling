@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_h2_lr_stat",
+  "value": 20.397812493363745,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_c_vs_spec_a",
+  "notes": "LR test stat for incremental macro block; df=5, p=1.0521e-03"
+}

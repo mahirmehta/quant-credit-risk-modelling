@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_roa_P_BBB_minus",
+  "value": -0.04313651117348882,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of roa on probability of BBB-"
+}

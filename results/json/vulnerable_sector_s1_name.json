@@ -1,0 +1,8 @@
+{
+  "metric_key": "vulnerable_sector_s1_name",
+  "value": "Shops",
+  "ci": null,
+  "n": null,
+  "spec": "S1 Tightening",
+  "notes": "Most vulnerable sector under monetary tightening"
+}

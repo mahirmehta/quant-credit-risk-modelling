@@ -1,0 +1,8 @@
+{
+  "metric_key": "m3_brier_base",
+  "value": 0.0288,
+  "ci": null,
+  "n": null,
+  "spec": "M3 Base Brier Score",
+  "notes": ""
+}

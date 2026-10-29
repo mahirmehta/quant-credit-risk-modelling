@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_s4_prauc_test",
+  "value": 0.23408433383584382,
+  "ci": null,
+  "n": 6615,
+  "spec": "S4",
+  "notes": "PR-AUC on test Investment Grade (Full)"
+}

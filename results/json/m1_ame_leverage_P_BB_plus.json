@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_leverage_P_BB_plus",
+  "value": 0.014308410204620859,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of leverage on probability of BB+"
+}

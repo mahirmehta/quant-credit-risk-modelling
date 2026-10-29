@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_roa_P_IG",
+  "value": 1.9368907868789642,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of roa on probability of Investment Grade P(IG)"
+}

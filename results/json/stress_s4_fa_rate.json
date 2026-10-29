@@ -1,0 +1,8 @@
+{
+  "metric_key": "stress_s4_fa_rate",
+  "value": 1.82,
+  "ci": null,
+  "n": null,
+  "spec": "S4 Soft Landing FA Rate (%)",
+  "notes": ""
+}

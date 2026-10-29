@@ -1,0 +1,8 @@
+{
+  "metric_key": "early_warning_pct_same",
+  "value": 44.44444444444444,
+  "ci": null,
+  "n": null,
+  "spec": "",
+  "notes": "% FAs where model alerted at same quarter as agency"
+}

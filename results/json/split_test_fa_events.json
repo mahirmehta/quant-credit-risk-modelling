@@ -1,0 +1,8 @@
+{
+  "metric_key": "split_test_fa_events",
+  "value": 204.0,
+  "ci": null,
+  "n": null,
+  "spec": "test FA events",
+  "notes": ""
+}

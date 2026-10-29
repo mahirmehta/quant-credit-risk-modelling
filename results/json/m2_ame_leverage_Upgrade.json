@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_leverage_Upgrade",
+  "value": -0.0017446904988525026,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of leverage on state Upgrade"
+}

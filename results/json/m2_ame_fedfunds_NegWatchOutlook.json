@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_fedfunds_NegWatchOutlook",
+  "value": 0.0026114608647714813,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of fedfunds on state NegWatchOutlook"
+}

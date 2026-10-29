@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_gdp_yoy_Downgrade_1N",
+  "value": -0.0013864093695651893,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of gdp_yoy on state Downgrade_1N"
+}

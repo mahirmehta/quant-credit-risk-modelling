@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_pseudo_r2_spec_c_logit",
+  "value": 0.35756158308518904,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_c_combined_logit",
+  "notes": "McFadden pseudo-R2 for M1 Ordered Logit benchmark"
+}

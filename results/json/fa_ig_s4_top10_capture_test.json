@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_s4_top10_capture_test",
+  "value": 0.6323529411764706,
+  "ci": null,
+  "n": 6615,
+  "spec": "S4",
+  "notes": "Top decile capture Investment Grade (Full)"
+}

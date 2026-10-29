@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_gdp_yoy_Stable",
+  "value": 0.0016723757789671315,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of gdp_yoy on state Stable"
+}

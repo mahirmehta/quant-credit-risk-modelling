@@ -1,0 +1,8 @@
+{
+  "metric_key": "stress_n5_fa_rate",
+  "value": 12.0,
+  "ci": null,
+  "n": null,
+  "spec": "N5 Reverse Stress Test Target (%)",
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_leverage_P_IG",
+  "value": -0.12961230295302648,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of leverage on probability of Investment Grade P(IG)"
+}

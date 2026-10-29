@@ -1,0 +1,5 @@
+Warning Channel,Mean Lead (Qtrs),Median Lead (Qtrs),Min Lead,Max Lead,Capture Rate (%)
+Macro-Augmented Model Alert (Threshold FPR=10%),3.12,3.00,1.00,6.00,84.2%
+Agency Negative CreditWatch Placement,1.24,1.00,0.00,3.00,61.5%
+Agency Negative Outlook Revision,1.85,2.00,0.00,4.00,68.9%
+Incremental Quantitative Early Warning Advantage,+1.88 Qtrs,+2.00 Qtrs,—,—,+22.7%

@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_pseudo_r2_probit",
+  "value": 0.07124543967016383,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_augmented_probit",
+  "notes": "McFadden pseudo-R2 for M2 Augmented Ordinal Migration Probit"
+}

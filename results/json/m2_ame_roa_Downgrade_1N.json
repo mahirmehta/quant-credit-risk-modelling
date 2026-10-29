@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_roa_Downgrade_1N",
+  "value": -0.009166000144203748,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of roa on state Downgrade_1N"
+}

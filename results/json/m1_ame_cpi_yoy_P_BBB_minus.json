@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_cpi_yoy_P_BBB_minus",
+  "value": 1.2019184395036683e-05,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of cpi_yoy on probability of BBB-"
+}

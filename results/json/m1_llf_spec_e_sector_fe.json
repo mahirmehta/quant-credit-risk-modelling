@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_llf_spec_e_sector_fe",
+  "value": -50418.73498997522,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_e_sector_fe",
+  "notes": "Log-Likelihood for M1 Ordered Probit spec_e_sector_fe"
+}

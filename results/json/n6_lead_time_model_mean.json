@@ -1,0 +1,11 @@
+{
+  "metric_key": "n6_lead_time_model_mean",
+  "value": 3.12,
+  "ci": [
+    2.85,
+    3.39
+  ],
+  "n": null,
+  "spec": "Model Early Warning Alert",
+  "notes": "Mean lead time in quarters prior to fallen-angel event"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_s1_brier_test",
+  "value": 0.02570993565662154,
+  "ci": null,
+  "n": 6615,
+  "spec": "S1",
+  "notes": "Brier score on test Investment Grade (Full)"
+}

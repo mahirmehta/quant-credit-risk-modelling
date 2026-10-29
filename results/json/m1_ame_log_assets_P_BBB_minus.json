@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_log_assets_P_BBB_minus",
+  "value": -0.0001459409829098938,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of log_assets on probability of BBB-"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "m3_pr_auc_macro",
+  "value": 0.0939,
+  "ci": null,
+  "n": null,
+  "spec": "M3 Macro-Augmented PR-AUC",
+  "notes": ""
+}

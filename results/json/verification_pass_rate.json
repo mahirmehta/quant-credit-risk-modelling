@@ -1,0 +1,8 @@
+{
+  "metric_key": "verification_pass_rate",
+  "value": 1.0,
+  "ci": null,
+  "n": 22,
+  "spec": "pytest",
+  "notes": "100% verification pass rate"
+}

@@ -1,0 +1,11 @@
+{
+  "metric_key": "n6_lead_time_advantage",
+  "value": 1.88,
+  "ci": [
+    1.55,
+    2.21
+  ],
+  "n": null,
+  "spec": "Model Lead Time Advantage",
+  "notes": "Advantage in quarters over agency action"
+}

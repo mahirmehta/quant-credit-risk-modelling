@@ -1,0 +1,8 @@
+{
+  "metric_key": "reverse_stress_rate",
+  "value": 0.10000000006424713,
+  "ci": null,
+  "n": null,
+  "spec": "N5 Reverse Stress",
+  "notes": "Achieved FA rate under reverse stress"
+}

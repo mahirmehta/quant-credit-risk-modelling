@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_fedfunds_Upgrade",
+  "value": -0.003559712229193636,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of fedfunds on state Upgrade"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "h1_downgrade_gap_pvalue",
+  "value": 0.01365998796684076,
+  "ci": null,
+  "n": 63920,
+  "spec": "logit_downgrade_4q",
+  "notes": "p-value on shadow gap predicting 4Q downgrade"
+}

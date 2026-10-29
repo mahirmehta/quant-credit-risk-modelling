@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_gdp_yoy_P_IG",
+  "value": 0.002154122593482928,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of gdp_yoy on probability of Investment Grade P(IG)"
+}

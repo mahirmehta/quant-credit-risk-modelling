@@ -1,0 +1,8 @@
+{
+  "metric_key": "h1_fa_gap_coef",
+  "value": -0.0237141725222772,
+  "ci": null,
+  "n": 40610,
+  "spec": "logit_fa_4q_ig_sample",
+  "notes": "Logit coefficient on shadow gap predicting 4Q fallen angel; OR = 0.977, p = 3.4126e-01"
+}

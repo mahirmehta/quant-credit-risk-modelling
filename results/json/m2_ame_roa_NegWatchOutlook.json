@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_roa_NegWatchOutlook",
+  "value": -0.008657496258232644,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of roa on state NegWatchOutlook"
+}

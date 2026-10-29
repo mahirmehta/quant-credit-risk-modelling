@@ -1,0 +1,8 @@
+{
+  "metric_key": "early_warning_pct_earlier",
+  "value": 34.92063492063492,
+  "ci": null,
+  "n": null,
+  "spec": "",
+  "notes": "% FAs where model alerted earlier than agency"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_leverage_MultiDowngrade",
+  "value": 0.00074426860554569,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of leverage on state MultiDowngrade"
+}

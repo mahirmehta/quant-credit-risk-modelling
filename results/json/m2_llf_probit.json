@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_llf_probit",
+  "value": -38019.99678803124,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_augmented_probit",
+  "notes": "Log-Likelihood for M2 Augmented Ordinal Migration Probit"
+}

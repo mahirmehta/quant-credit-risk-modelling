@@ -1,0 +1,8 @@
+{
+  "metric_key": "m3_pr_auc_base",
+  "value": 0.0934,
+  "ci": null,
+  "n": null,
+  "spec": "M3 Base Firm-Only PR-AUC",
+  "notes": ""
+}

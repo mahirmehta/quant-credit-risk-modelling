@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_s1_top10_lift_test",
+  "value": 3.6274509803921564,
+  "ci": null,
+  "n": 2755,
+  "spec": "S1",
+  "notes": "Top decile lift BBB-Band Subsample"
+}

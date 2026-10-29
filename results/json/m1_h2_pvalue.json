@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_h2_pvalue",
+  "value": 0.0010521106793621726,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_c_vs_spec_a",
+  "notes": "p-value for H2 LR test"
+}

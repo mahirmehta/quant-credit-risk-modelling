@@ -1,0 +1,8 @@
+{
+  "metric_key": "early_warning_lead_time_model_mean",
+  "value": 5.714285714285714,
+  "ci": null,
+  "n": null,
+  "spec": "",
+  "notes": "Mean model lead time in quarters"
+}

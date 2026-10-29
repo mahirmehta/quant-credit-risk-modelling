@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_term_spread_P_BB_plus",
+  "value": -0.0006362737700595754,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of term_spread on probability of BB+"
+}

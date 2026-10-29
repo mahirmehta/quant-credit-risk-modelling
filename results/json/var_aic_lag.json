@@ -1,0 +1,8 @@
+{
+  "metric_key": "var_aic_lag",
+  "value": 5.0,
+  "ci": null,
+  "n": null,
+  "spec": "VAR order selection",
+  "notes": "Minimum AIC lag order"
+}

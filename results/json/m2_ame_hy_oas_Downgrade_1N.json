@@ -1,0 +1,8 @@
+{
+  "metric_key": "m2_ame_hy_oas_Downgrade_1N",
+  "value": 0.001107672216497093,
+  "ci": null,
+  "n": 32105,
+  "spec": "m2_ordered_probit",
+  "notes": "AME of hy_oas on state Downgrade_1N"
+}

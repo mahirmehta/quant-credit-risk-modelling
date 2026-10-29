@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_delong_s4_vs_s3_z",
+  "value": -0.2530264671821494,
+  "ci": null,
+  "n": null,
+  "spec": "S4 vs S3",
+  "notes": "Z-stat S4 vs S3"
+}

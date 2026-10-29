@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_llf_spec_d_interactions",
+  "value": -50494.193984397665,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Log-Likelihood for M1 Ordered Probit spec_d_interactions"
+}

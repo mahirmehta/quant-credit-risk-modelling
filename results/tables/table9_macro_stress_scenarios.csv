@@ -1,0 +1,7 @@
+Scenario,FFR (bp),10Y (bp),HY OAS (bp),GDP YoY,CPI YoY,Pred FA Rate,Implied FA Count,Debt at Risk ($B)
+S0: Baseline Projection,+0,+0,+0,+2.1%,+2.2%,2.41%,17,$34.2B
+S1: Policy Tightening (+300bp),+300,+180,+240,+0.5%,+3.8%,6.85%,48,$96.8B
+S2: Hard Landing (GFC-lite),-200,-150,+450,-2.8%,+1.1%,9.42%,66,$133.5B
+S3: Stagflationary Squeeze,+200,+150,+320,-0.9%,+6.4%,8.14%,57,$115.2B
+S4: Soft Landing / Easing,-150,-80,-70,+2.4%,+2.0%,1.82%,13,$25.8B
+N5: Reverse Stress Test (GFC Target: 12%),+380,+240,+580,-3.4%,+5.2%,12.00%,84,$170.0B

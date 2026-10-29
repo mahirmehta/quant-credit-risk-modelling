@@ -1,0 +1,8 @@
+{
+  "metric_key": "panel_downgrades_total",
+  "value": 10620.0,
+  "ci": null,
+  "n": null,
+  "spec": "panel_firmq",
+  "notes": "Total 12-month downgrade events"
+}

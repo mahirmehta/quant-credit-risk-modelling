@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_fedfunds_P_IG",
+  "value": 0.0041876903692801455,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of fedfunds on probability of Investment Grade P(IG)"
+}

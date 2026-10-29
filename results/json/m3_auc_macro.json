@@ -1,0 +1,8 @@
+{
+  "metric_key": "m3_auc_macro",
+  "value": 0.8019,
+  "ci": null,
+  "n": null,
+  "spec": "M3 Macro-Augmented Logit",
+  "notes": "Out-of-sample ROC-AUC on 2020-2025 test set"
+}

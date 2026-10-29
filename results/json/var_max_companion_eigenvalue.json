@@ -1,0 +1,8 @@
+{
+  "metric_key": "var_max_companion_eigenvalue",
+  "value": 0.8971189310911956,
+  "ci": null,
+  "n": null,
+  "spec": "VAR(2)",
+  "notes": "Max companion eigenvalue modulus (must be < 1.0)"
+}

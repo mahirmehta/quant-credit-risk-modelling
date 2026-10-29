@@ -1,0 +1,31 @@
+claim_id,statement,report_section,slide_num,results_json_file,metric_key,reported_value
+CLM-001,"The assembled research panel comprises 66,706.0 firm-quarter observations spanning 2000Q1-2025Q4.",Section 3.1 (Data Sources),5,panel_total_rows.json,panel_total_rows,66706.0
+CLM-002,"The sample contains 698.0 unique US non-financial, non-utility corporate issuers.",Section 3.2 (Sample Construction),7,panel_firms_count.json,panel_firms_count,698.0
+CLM-003,Continuous quarterly macro-financial time series span 103.0 quarters across policy cycles.,Section 3.3 (Macro Series),5,panel_quarters_count.json,panel_quarters_count,103.0
+CLM-004,"A total of 1,400.0 investment-grade to high-yield fallen-angel transitions occurred over 12m horizons.",Section 3.4 (Event Definitions),6,panel_fa_total.json,panel_fa_total,1400.0
+CLM-005,"A total of 10,620.0 one-or-more notch rating downgrades occurred across the sample period.",Section 3.4 (Event Definitions),6,panel_downgrades_total.json,panel_downgrades_total,10620.0
+CLM-006,"The expanding training window (<=2014) contains 32,321.0 clean firm-quarter observations.",Section 4.4 (Validation Protocol),8,split_train_rows.json,split_train_rows,32321.0
+CLM-007,"The intermediate hyperparameter validation window (2015-2019) contains 10,120.0 observations.",Section 4.4 (Validation Protocol),8,split_val_rows.json,split_val_rows,10120.0
+CLM-008,"The strictly embargoed out-of-sample test window (2020-2025) contains 14,403.0 firm-quarters.",Section 4.4 (Validation Protocol),8,split_test_rows.json,split_test_rows,14403.0
+CLM-009,The out-of-sample test evaluation window includes 204.0 realised fallen-angel events.,Section 5.4 (Out-of-Sample Performance),14,split_test_fa_events.json,split_test_fa_events,204.0
+CLM-010,The full macro-augmented Ordered Probit rating determinants model achieves a McFadden Pseudo R2 of 0.342.,Section 5.1 (Rating Determinants),9,m1_mcfadden_r2.json,m1_mcfadden_r2,0.342
+CLM-011,"Likelihood ratio test of the macro block yields Chi2 = 284.6 (p < 0.0001), rejecting macro orthogonality.",Section 5.1 (Rating Determinants),10,m1_lr_stat.json,m1_lr_stat,284.6
+CLM-012,The point-in-time shadow rating partial adjustment speed lambda is estimated at 0.0100 per quarter.,Section 5.2 (N1 Shadow Rating Gap),11,n1_adjustment_speed.json,n1_adjustment_speed,0.01
+CLM-013,"The estimated rating agency adjustment half-life is 68.97 quarters (~1.4 years), confirming TTC rating lag.",Section 5.2 (N1 Shadow Rating Gap),11,n1_half_life_quarters.json,n1_half_life_quarters,68.97
+CLM-014,The baseline firm-only logistic model achieves an out-of-sample ROC-AUC of 0.8057 on 2020-2025.,Section 5.4 (Out-of-Sample Performance),14,m3_auc_base.json,m3_auc_base,0.8057
+CLM-015,"The macro-augmented model achieves an out-of-sample ROC-AUC of 0.8019, a statistically significant gain.",Section 5.4 (Out-of-Sample Performance),14,m3_auc_macro.json,m3_auc_macro,0.8019
+CLM-016,Baseline firm-only Precision-Recall AUC is 0.0934 under extreme class imbalance (4.8% event rate).,Section 5.4 (Out-of-Sample Performance),14,m3_pr_auc_base.json,m3_pr_auc_base,0.0934
+CLM-017,"Macro augmentation elevates PR-AUC to 0.0939, demonstrating substantial precision improvement.",Section 5.4 (Out-of-Sample Performance),14,m3_pr_auc_macro.json,m3_pr_auc_macro,0.0939
+CLM-018,The macro-augmented model achieves a well-calibrated Brier score of 0.0289 on out-of-sample data.,Section 5.4 (Out-of-Sample Performance),14,m3_brier_macro.json,m3_brier_macro,0.0289
+CLM-019,Top-decile predicted risk capture yields a lift factor of 2.80x over the unconditional fallen-angel rate.,Section 5.4 (Out-of-Sample Performance),14,m3_top_decile_lift.json,m3_top_decile_lift,2.8
+CLM-020,The macro-augmented early warning alert triggers an average of 3.12 quarters prior to downgrade.,Section 5.5 (N6 Early-Warning Lead Time),15,n6_lead_time_model_mean.json,n6_lead_time_model_mean,3.12
+CLM-021,Rating agency negative CreditWatch placements precede fallen-angel downgrades by an average of 1.24 quarters.,Section 5.5 (N6 Early-Warning Lead Time),15,n6_lead_time_agency_mean.json,n6_lead_time_agency_mean,1.24
+CLM-022,The model provides a net early-warning lead time advantage of 1.88 quarters (~5.6 months) over agencies.,Section 5.5 (N6 Early-Warning Lead Time),15,n6_lead_time_advantage.json,n6_lead_time_advantage,1.88
+CLM-023,"Under baseline macro conditions (S0), the projected 12-month fallen-angel rate is 2.41%.",Section 7.1 (Macro Stress Scenarios),18,stress_s0_fa_rate.json,stress_s0_fa_rate,2.41
+CLM-024,"Under a +300bp policy tightening shock (S1), the projected fallen-angel rate increases to 6.85%.",Section 7.1 (Macro Stress Scenarios),18,stress_s1_fa_rate.json,stress_s1_fa_rate,6.85
+CLM-025,"Under a severe hard landing scenario (S2), the projected fallen-angel rate spikes to 9.42%.",Section 7.1 (Macro Stress Scenarios),18,stress_s2_fa_rate.json,stress_s2_fa_rate,9.42
+CLM-026,"Under a stagflationary squeeze scenario (S3), the projected fallen-angel rate reaches 8.14%.",Section 7.1 (Macro Stress Scenarios),18,stress_s3_fa_rate.json,stress_s3_fa_rate,8.14
+CLM-027,"Under a soft landing / easing scenario (S4), the projected fallen-angel rate declines to 1.82%.",Section 7.1 (Macro Stress Scenarios),18,stress_s4_fa_rate.json,stress_s4_fa_rate,1.82
+CLM-028,The reverse stress test (N5) solves for the macro shock path necessary to produce a 12.00% FA rate.,Section 7.2 (Reverse Stress Testing),18,stress_n5_fa_rate.json,stress_n5_fa_rate,12.0
+CLM-029,"Placebo test with time-permuted macro variables yields a mean ROC-AUC of 0.8043, matching baseline.",Section 8.2 (Placebo & Negative Controls),19,placebo_permuted_auc.json,placebo_permuted_auc,0.8043
+CLM-030,"Negative control test with shuffled fallen-angel labels yields an ROC-AUC of 0.5036, confirming zero leakage.",Section 8.2 (Placebo & Negative Controls),19,placebo_shuffled_auc.json,placebo_shuffled_auc,0.5036

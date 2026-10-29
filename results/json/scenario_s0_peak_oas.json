@@ -1,0 +1,8 @@
+{
+  "metric_key": "scenario_s0_peak_oas",
+  "value": 5.812983217282892,
+  "ci": null,
+  "n": null,
+  "spec": "S0",
+  "notes": "Peak HY OAS"
+}

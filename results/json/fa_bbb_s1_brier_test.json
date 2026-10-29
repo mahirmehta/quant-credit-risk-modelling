@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_s1_brier_test",
+  "value": 0.06169041713903616,
+  "ci": null,
+  "n": 2755,
+  "spec": "S1",
+  "notes": "Brier score on test BBB-Band Subsample"
+}

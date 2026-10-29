@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_s2_prauc_test",
+  "value": 0.24232471931316135,
+  "ci": null,
+  "n": 6615,
+  "spec": "S2",
+  "notes": "PR-AUC on test Investment Grade (Full)"
+}

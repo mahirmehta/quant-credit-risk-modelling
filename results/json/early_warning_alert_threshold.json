@@ -1,0 +1,8 @@
+{
+  "metric_key": "early_warning_alert_threshold",
+  "value": 0.11005906261829175,
+  "ci": null,
+  "n": null,
+  "spec": "S3",
+  "notes": "Alert threshold calibrated on validation set"
+}

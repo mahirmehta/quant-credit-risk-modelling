@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_ame_log_assets_P_IG",
+  "value": 0.006552954713633495,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "Average marginal effect of log_assets on probability of Investment Grade P(IG)"
+}

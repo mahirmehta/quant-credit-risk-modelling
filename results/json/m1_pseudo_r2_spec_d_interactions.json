@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_pseudo_r2_spec_d_interactions",
+  "value": 0.3586816850568232,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_d_interactions",
+  "notes": "McFadden pseudo-R2 for M1 Ordered Probit spec_d_interactions"
+}

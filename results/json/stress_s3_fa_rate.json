@@ -1,0 +1,8 @@
+{
+  "metric_key": "stress_s3_fa_rate",
+  "value": 8.14,
+  "ci": null,
+  "n": null,
+  "spec": "S3 Stagflation FA Rate (%)",
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "m1_pseudo_r2_spec_c_combined",
+  "value": 0.3586667218085393,
+  "ci": null,
+  "n": 34870,
+  "spec": "spec_c_combined",
+  "notes": "McFadden pseudo-R2 for M1 Ordered Probit spec_c_combined"
+}

@@ -1,0 +1,8 @@
+{
+  "metric_key": "vulnerable_sector_s1_delta",
+  "value": 0.004969460167487866,
+  "ci": null,
+  "n": null,
+  "spec": "S1 Tightening",
+  "notes": "Delta P(FA) of most vulnerable sector under tightening"
+}

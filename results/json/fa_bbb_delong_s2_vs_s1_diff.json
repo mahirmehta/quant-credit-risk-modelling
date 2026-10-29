@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_bbb_delong_s2_vs_s1_diff",
+  "value": 0.02180037048139538,
+  "ci": null,
+  "n": null,
+  "spec": "S2 vs S1",
+  "notes": "AUC diff S2 - S1"
+}

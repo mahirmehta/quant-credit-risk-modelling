@@ -1,0 +1,11 @@
+{
+  "metric_key": "n1_partial_adj_lambda",
+  "value": 0.001618299897457222,
+  "ci": [
+    -0.0004919200839585804,
+    0.0037285198788730243
+  ],
+  "n": 66008,
+  "spec": "controlled_ols",
+  "notes": "Speed of adjustment lambda per quarter (controlled for rating level and size)"
+}

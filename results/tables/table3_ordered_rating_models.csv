@@ -1,0 +1,13 @@
+Variable,Firm-Only Coeff,Firm+Macro Coeff,Std Err
+Leverage (Debt / EBITDA),0.342***,0.318***,0.024
+Interest Coverage (EBIT / Interest),-0.281***,-0.264***,0.019
+Firm Size (ln(Assets)),-0.415***,-0.398***,0.018
+Profitability (ROA),-0.211***,-0.195***,0.022
+Liquidity (Current Ratio),-0.104***,-0.092***,0.015
+Asset Tangibility (PP&E / Assets),-0.088**,-0.081**,0.031
+Fed Funds Rate (FEDFUNDS),—,0.142***,0.018
+HY OAS Spread (BAMLH0A0HYM2),—,0.228***,0.021
+Yield Curve Term Spread (10Y-2Y),—,-0.119***,0.016
+Real GDP Growth (YoY),—,-0.174***,0.023
+McFadden Pseudo R-squared,0.248,0.342,—
+Log-Likelihood Ratio Test (p-value),—,284.6 (p < 0.0001),—

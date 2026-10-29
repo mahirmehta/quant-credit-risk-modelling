@@ -1,0 +1,11 @@
+{
+  "metric_key": "n1_half_life_recession",
+  "value": 632.490526915915,
+  "ci": [
+    92.90230378583644,
+    6931.125226233421
+  ],
+  "n": 66008,
+  "spec": "regime_ols",
+  "notes": "Rating half-life during NBER recessions"
+}

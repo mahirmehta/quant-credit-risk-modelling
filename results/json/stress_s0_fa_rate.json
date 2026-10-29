@@ -1,0 +1,8 @@
+{
+  "metric_key": "stress_s0_fa_rate",
+  "value": 2.41,
+  "ci": null,
+  "n": null,
+  "spec": "S0 Baseline FA Rate (%)",
+  "notes": ""
+}

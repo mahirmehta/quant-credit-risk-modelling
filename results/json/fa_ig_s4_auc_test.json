@@ -1,0 +1,8 @@
+{
+  "metric_key": "fa_ig_s4_auc_test",
+  "value": 0.9211251494826601,
+  "ci": null,
+  "n": 6615,
+  "spec": "S4",
+  "notes": "ROC-AUC on test Investment Grade (Full)"
+}

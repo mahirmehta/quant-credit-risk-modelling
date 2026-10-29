@@ -1,0 +1,8 @@
+{
+  "metric_key": "reverse_stress_terminal_ffr",
+  "value": 6.70152901952522,
+  "ci": null,
+  "n": null,
+  "spec": "N5 Reverse Stress",
+  "notes": "Terminal FFR under reverse stress"
+}
