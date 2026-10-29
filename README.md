@@ -6,11 +6,6 @@
 [![Presentation](https://img.shields.io/badge/presentation-21%20slides%20(16:9)-darkblue.svg)](slides/presentation.pptx)
 [![License](https://img.shields.io/badge/license-Academic-lightgrey.svg)](LICENSE)
 
-**Course:** Quantitative Analysis of Financial Markets  
-**Institution:** Singapore Management University (SMU) — MSc in Quantitative Finance (MQF)  
-**Author:** Mahir Mehta  
-**Focus:** Point-in-time latent credit rating modeling, through-the-cycle agency lag quantification, macro-augmented ordinal rating models, out-of-sample fallen-angel early warning (BBB−/BB+ cliff edge), and coherent macro stress testing via VAR conditional forecasts.
-
 ---
 
 ## 1. Executive Summary & Research Questions
