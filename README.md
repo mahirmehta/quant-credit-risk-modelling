@@ -87,10 +87,10 @@ quant-credit-risk-modelling/
 │   ├── figures/                      # Publication-grade figures (300 DPI PNG)
 │   ├── tables/                       # Empirical results CSV tables (Tables 1-10)
 │   └── json/                         # Machine-readable metric registry files
-├── report/
-│   └── main.pdf                      # Final certified 25-page research report
-└── slides/
-    └── presentation.pptx             # Final certified 21-slide presentation deck
+├── report/                           # Generated on demand via `make report`
+│   └── main.pdf                      # Certified 25-page academic research report
+└── slides/                           # Generated on demand via `make slides`
+    └── presentation.pptx             # Certified 21-slide presentation deck
 ```
 
 ---
