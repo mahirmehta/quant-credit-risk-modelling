@@ -33,9 +33,6 @@ This repository implements a quantitative research framework addressing:
 
 ## 3. Current Repository Assets
 
-> [!NOTE]
-> The final PDF research report and presentation slides are **not included in the repository right now** and will be generated later. The underlying quantitative models, data pipelines, results registry, and verification suite are fully populated and tested.
-
 | Asset | Path | Details |
 |---|---|---|
 | **Quantitative Claim Ledger** | [`docs/claim_ledger.csv`](docs/claim_ledger.csv) | **30 individual numerical claims** audited against machine-readable JSON metrics in `results/json/`. |
