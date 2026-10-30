@@ -4,7 +4,7 @@ PYTHON = python
 
 .PHONY: all clean test data models stress report slides
 
-all: data models stress report slides test
+all: data models stress test
 
 data:
 	$(PYTHON) -m src.credit.data_macro.extract_macro

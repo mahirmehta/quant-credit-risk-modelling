@@ -2,8 +2,6 @@
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Pytest](https://img.shields.io/badge/pytest-22%20passed%20(100%25)-brightgreen.svg)](tests/)
-[![Report](https://img.shields.io/badge/report-25%20pages%20(certified)-purple.svg)](report/main.pdf)
-[![Presentation](https://img.shields.io/badge/presentation-21%20slides%20(16:9)-darkblue.svg)](slides/presentation.pptx)
 [![License](https://img.shields.io/badge/license-Academic-lightgrey.svg)](LICENSE)
 
 ---
@@ -12,7 +10,7 @@
 
 Credit rating agencies declare their ratings to be formulated "through-the-cycle" (TTC), designed to filter out transient business cycle fluctuations. However, this creates a systematic **agency adjustment lag** that leaves institutional investors vulnerable to sudden downgrades across the investment-grade (IG) to high-yield (HY) threshold—the **fallen-angel cliff (BBB− to BB+)**—triggering mandatory institutional divestment and fire-sale price discounts.
 
-This repository implements a rigorous quantitative research framework addressing:
+This repository implements a quantitative research framework addressing:
 1. **Agency Lag Quantification (H1):** Does a point-in-time (PIT) latent shadow rating lead published agency actions, and what is the empirical rating adjustment half-life ($t_{1/2}$)?
 2. **Incremental Macro Value (H2):** Does a macroeconomic block (FFR, term spread, credit spread, CPI, GDP) provide statistically significant incremental explanatory power beyond firm balance sheets?
 3. **Balance Sheet Vulnerability (H3):** How do monetary tightening and credit shocks interact with corporate leverage and interest coverage across Fama-French 12 sectors?
@@ -33,14 +31,18 @@ This repository implements a rigorous quantitative research framework addressing
 
 ---
 
-## 3. Deliverables
+## 3. Current Repository Assets
 
-| Deliverable | Path | Details |
+> [!NOTE]
+> The final PDF research report and presentation slides are **not included in the repository right now** and will be generated later. The underlying quantitative models, data pipelines, results registry, and verification suite are fully populated and tested.
+
+| Asset | Path | Details |
 |---|---|---|
-| **Academic Report** | [`report/main.pdf`](report/main.pdf) | **Certified exactly 25 pages**; formatted to quantitative finance journal standards with complete literature, econometric specifications, empirical tables, and 10 high-resolution figures. |
-| **Presentation Deck** | [`slides/presentation.pptx`](slides/presentation.pptx) | **Certified exactly 21 slides**; 16:9 widescreen presentation featuring key takeaways, embedded figures, structured tables, and speaker notes. |
-| **Claim Ledger** | [`docs/claim_ledger.csv`](docs/claim_ledger.csv) | **30 individual numerical claims** audited against machine-readable JSON metrics in `results/json/`. |
+| **Quantitative Claim Ledger** | [`docs/claim_ledger.csv`](docs/claim_ledger.csv) | **30 individual numerical claims** audited against machine-readable JSON metrics in `results/json/`. |
 | **Test Suite** | [`tests/`](tests/) | **22/22 unit, leakage, and Monte Carlo tests passing (100%)**. |
+| **Empirical Results Registry** | [`results/json/`](results/json/) | Machine-readable metrics, likelihood ratios, pseudo-$R^2$, and half-life estimates. |
+| **Statistical Tables** | [`results/tables/`](results/tables/) | Clean CSV tables (Tables 1–10) covering attrition, summary stats, models, and stress tests. |
+| **Publication Figures** | [`results/figures/`](results/figures/) | 300 DPI visualizations (ROC/PR curves, lead times, VAR scenarios, sector heatmaps). |
 
 ---
 
@@ -52,6 +54,7 @@ quant-credit-risk-modelling/
 ├── README.md                         # Project documentation and reproduction guide
 ├── requirements.txt                  # Pinned Python dependencies
 ├── plan_updated.md                   # Full research design and execution plan
+├── .gitignore                        # Git ignore rules
 ├── config/
 │   ├── config.yaml                   # Global seeds, paths, model settings
 │   ├── definitions.yaml              # Rating scale, SIC exclusions, horizon definitions
@@ -77,41 +80,37 @@ quant-credit-risk-modelling/
 │   ├── models_ordinal/               # M1 Probit/Logit ladder, N1 Shadow Rating, M2 Migration
 │   ├── models_binary/                # M3 Fallen-Angel Firth Logit & N6 Early-Warning
 │   ├── stress/                       # VAR(2) estimation, Waggoner-Zha paths, Reverse Stress
-│   ├── reporting/                    # 25-page PDF generator & 21-slide PPTX builder
+│   ├── reporting/                    # Report and presentation generator scripts (to run later)
 │   └── utils/                        # Shared helpers, metrics registry, FF12 mapper
 ├── tests/
 │   ├── leakage/                      # Point-in-time leakage tests (avail_date <= qdate)
 │   ├── simulation/                   # Known-DGP Monte Carlo recovery & Placebo tests
 │   └── unit/                         # Data contract schemas & rating scale unit tests
-├── results/
-│   ├── figures/                      # Publication-grade figures (300 DPI PNG)
-│   ├── tables/                       # Empirical results CSV tables (Tables 1-10)
-│   └── json/                         # Machine-readable metric registry files
-├── report/                           # Generated on demand via `make report`
-│   └── main.pdf                      # Certified 25-page academic research report
-└── slides/                           # Generated on demand via `make slides`
-    └── presentation.pptx             # Certified 21-slide presentation deck
+└── results/
+    ├── figures/                      # Publication-grade figures (300 DPI PNG)
+    ├── tables/                       # Empirical results CSV tables (Tables 1-10)
+    └── json/                         # Machine-readable metric registry files
 ```
 
 ---
 
-## 5. Reproduction & Execution Guide
+## 5. Execution Guide
 
 ### Prerequisites
 - Python 3.11+
-- Virtual environment or local interpreter with dependencies:
+- Install dependencies:
   ```bash
   pip install -r requirements.txt
   ```
 
-### Run Full End-to-End Pipeline
-Execute all stages via the `Makefile`:
+### Run Models and Verification Pipeline
+Execute via `Makefile`:
 ```bash
-# Run entire data extraction, modeling, stress testing, reporting, and verification
+# Run data extraction, modeling, stress testing, and test verification
 make all
 ```
 
-Or execute individual pipeline modules:
+Or execute individual stages:
 ```bash
 # 1. Macro and panel data generation
 make data
@@ -122,14 +121,18 @@ make models
 # 3. Macro VAR stress scenarios & reverse stress test
 make stress
 
-# 4. Generate 25-page academic report
+# 4. Run automated test suite (22/22 tests)
+make test
+```
+
+### On-Demand Deliverable Generation (To Run Later)
+When ready to produce the report and presentation files:
+```bash
+# Compile the 25-page academic PDF report into report/main.pdf
 make report
 
-# 5. Build 21-slide presentation deck
+# Compile the 21-slide presentation deck into slides/presentation.pptx
 make slides
-
-# 6. Run automated test suite
-make test
 ```
 
 ---
