@@ -213,10 +213,6 @@ M5: Gradient Boosted Machine (GBM) | 0.8099 | 0.1119 | 0.0281 | 3.02x
 
 Table VI details the out-of-sample performance metrics. The macro-augmented Firth penalized model (M3-S4) achieves an ROC-AUC of 0.8069, a PR-AUC of 0.1059, a Brier score of 0.0284, and a top-decile lift factor of 2.95x, outperforming the pure agency rating benchmark (ROC-AUC = 0.7180) by nearly 9 percentage points.
 
-![Out-of-Sample ROC and PR Curves](results/figures/fig5_roc_pr_curves.png)
-
-Figure 5 plots the out-of-sample ROC and Precision-Recall curves across all competing model architectures. The macro-augmented specifications maintain superior true positive rates across all operational false positive thresholds.
-
 ## B. Early-Warning Advance Notice Lead Time
 
 ```
@@ -230,6 +226,12 @@ Incremental Quantitative Early Warning Advantage | +1.88 Qtrs | +2.00 Qtrs | —
 ```
 
 Table VII documents the lead time diagnostics. The quantitative macro-augmented early warning alert triggers an average of 3.12 quarters prior to downgrade (capture rate = 84.2%), compared to only 1.24 quarters for official agency CreditWatch placements (capture rate = 61.5%). This delivers an incremental lead time advantage of +1.88 quarters (~5.6 months), providing institutional portfolio managers crucial runway to execute orderly portfolio de-risking before secondary market liquidity dries up.
+
+## C. Visual Early-Warning Diagnostics: ROC/PR Curves & Lead Time Distribution
+
+![Out-of-Sample ROC and PR Curves](results/figures/fig5_roc_pr_curves.png)
+
+Figure 5 plots the out-of-sample ROC and Precision-Recall curves across all competing model architectures. The macro-augmented specifications maintain superior true positive rates across all operational false positive thresholds.
 
 ![Lead Time Distribution](results/figures/fig6_lead_time_distribution.png)
 

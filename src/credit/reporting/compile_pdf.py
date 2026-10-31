@@ -598,10 +598,10 @@ TABLE_SCHEMAS = {
         "padding_lr": 20,
     },
     "TABLE X": {
-        "widths": [Inches(4.00), Inches(1.10), Inches(1.60)],
+        "widths": [Inches(3.20), Inches(1.10), Inches(2.40)],
         "align_right": [1, 2],
-        "font_size": Pt(8.0),
-        "padding_lr": 45,
+        "font_size": Pt(7.5),
+        "padding_lr": 40,
     },
 }
 
@@ -665,7 +665,7 @@ class WordReportBuilder:
         p_foot.alignment = WD_ALIGN_PARAGRAPH.LEFT
         p_foot.paragraph_format.space_before = Pt(4)
 
-        r_f1 = p_foot.add_run("QUANTITATIVE ANALYSIS OF FINANCIAL MARKETS | SMU MSc Quantitative Finance")
+        r_f1 = p_foot.add_run("Quantitative Analysis of Financial Markets")
         r_f1.font.name = "Times New Roman"
         r_f1.font.size = Pt(8.5)
         r_f1.font.color.rgb = RGBColor(0, 0, 0)
@@ -875,14 +875,13 @@ class WordReportBuilder:
         self.doc.add_page_break()
 
     def add_heading_1(self, text: str, is_first: bool = False):
-        if not is_first:
-            self.doc.add_page_break()
-
         p = self.doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         p.paragraph_format.space_before = Pt(14)
         p.paragraph_format.space_after = Pt(4)
         p.paragraph_format.keep_with_next = True
+        if not is_first:
+            p.paragraph_format.page_break_before = True
 
         r = p.add_run(text.upper())
         r.font.name = "Times New Roman"
@@ -893,9 +892,11 @@ class WordReportBuilder:
     def add_heading_2(self, text: str):
         p = self.doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        p.paragraph_format.space_before = Pt(9)
-        p.paragraph_format.space_after = Pt(3)
+        p.paragraph_format.space_before = Pt(7)
+        p.paragraph_format.space_after = Pt(2)
         p.paragraph_format.keep_with_next = True
+        if "Visual Early-Warning Diagnostics" in text:
+            p.paragraph_format.page_break_before = True
 
         r = p.add_run(text)
         r.font.name = "Times New Roman"
@@ -907,7 +908,7 @@ class WordReportBuilder:
     def add_heading_3(self, text: str):
         p = self.doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        p.paragraph_format.space_before = Pt(6)
+        p.paragraph_format.space_before = Pt(5)
         p.paragraph_format.space_after = Pt(2)
         p.paragraph_format.keep_with_next = True
 
@@ -1084,14 +1085,14 @@ class WordReportBuilder:
 
             p_eq = c_eq.paragraphs[0]
             p_eq.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            p_eq.paragraph_format.space_before = Pt(4)
-            p_eq.paragraph_format.space_after = Pt(4)
+            p_eq.paragraph_format.space_before = Pt(2)
+            p_eq.paragraph_format.space_after = Pt(2)
             p_eq._p.append(parse_xml(omml_xml))
 
             p_tag = c_tag.paragraphs[0]
             p_tag.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-            p_tag.paragraph_format.space_before = Pt(4)
-            p_tag.paragraph_format.space_after = Pt(4)
+            p_tag.paragraph_format.space_before = Pt(2)
+            p_tag.paragraph_format.space_after = Pt(2)
             r_t = p_tag.add_run(tag)
             r_t.font.name = "Times New Roman"
             r_t.font.size = Pt(10)
@@ -1099,8 +1100,8 @@ class WordReportBuilder:
         else:
             p = self.doc.add_paragraph()
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-            p.paragraph_format.space_before = Pt(4)
-            p.paragraph_format.space_after = Pt(4)
+            p.paragraph_format.space_before = Pt(2)
+            p.paragraph_format.space_after = Pt(2)
             p._p.append(parse_xml(omml_xml))
 
     def add_table_block(self, text: str):
@@ -1274,23 +1275,39 @@ class WordReportBuilder:
             r_fn.font.color.rgb = RGBColor(0, 0, 0)
 
     def add_figure(self, filename: str, caption_text: str):
-        """Embed centered 300 DPI research figure with formal IEEE caption."""
+        """Embed centered 300 DPI research figure with calibrated width to prevent awkward blank spaces."""
         img_path = FIGURES_DIR / filename
         if not img_path.exists():
             print(f"Warning: Figure {img_path} not found.")
             return
 
+        # Calibrated width per figure to balance aspect ratios and fit companion content
+        fig_widths = {
+            "fig1_rating_distribution.png": Inches(4.3),
+            "fig2_macro_series.png": Inches(4.3),
+            "fig3_shadow_rating_gap.png": Inches(4.3),
+            "fig4_migration_matrix.png": Inches(4.2),
+            "fig5_roc_pr_curves.png": Inches(4.4),
+            "fig6_lead_time_distribution.png": Inches(4.2),
+            "fig7_macro_sensitivity_interactions.png": Inches(4.2),
+            "fig8_sector_vulnerability_heatmap.png": Inches(4.3),
+            "fig9_var_scenarios.png": Inches(4.6),  # aspect 0.35 -> height ~1.6 in
+            "fig10_placebo_diagnostics.png": Inches(4.3),
+        }
+        target_width = fig_widths.get(filename, Inches(4.3))
+
         p_img = self.doc.add_paragraph()
         p_img.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p_img.paragraph_format.space_before = Pt(8)
-        p_img.paragraph_format.space_after = Pt(3)
+        p_img.paragraph_format.space_before = Pt(4)
+        p_img.paragraph_format.space_after = Pt(2)
         p_img.paragraph_format.keep_with_next = True
-        p_img.add_run().add_picture(str(img_path), width=Inches(5.8))
+        p_img.add_run().add_picture(str(img_path), width=target_width)
 
         p_cap = self.doc.add_paragraph()
         p_cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p_cap.paragraph_format.space_before = Pt(2)
-        p_cap.paragraph_format.space_after = Pt(8)
+        p_cap.paragraph_format.space_before = Pt(1)
+        p_cap.paragraph_format.space_after = Pt(5)
+        p_cap.paragraph_format.keep_with_next = True
         r_cap = p_cap.add_run(caption_text)
         r_cap.font.name = "Times New Roman"
         r_cap.font.size = Pt(8.0)
